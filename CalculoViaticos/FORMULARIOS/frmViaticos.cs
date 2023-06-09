@@ -36,8 +36,8 @@ namespace CalculoViaticos.FORMULARIOS
             {
                 string correo = dgViaticos.CurrentRow.Cells[2].Value.ToString();
 
-                var user = new InicioSesion();
-                var rsultado = user.MensajeViaticos(correo);
+                InicioSesion user = new InicioSesion();
+                user.MensajeViaticos(correo);
 
                 frmCalculoViaticos frm = new frmCalculoViaticos();
                 DatosViaticos datos = new DatosViaticos();
@@ -62,6 +62,8 @@ namespace CalculoViaticos.FORMULARIOS
                 datos.ida = int.Parse(dgViaticos.CurrentRow.Cells[18].Value.ToString());
                 datos.regreso = int.Parse(dgViaticos.CurrentRow.Cells[19].Value.ToString());
                 datos.nodiasotros = int.Parse(dgViaticos.CurrentRow.Cells[20].Value.ToString());
+                datos.asignacionxdia = float.Parse(dgViaticos.CurrentRow.Cells[21].Value.ToString());
+                datos.descripcionotros = dgViaticos.CurrentRow.Cells[22].Value.ToString();
                 frm.datosViaticos.Add(datos);
                 frm.Show();
             }

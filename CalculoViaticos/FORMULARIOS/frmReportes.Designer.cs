@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.btnLogin = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
             this.btnReporte1 = new System.Windows.Forms.Button();
             this.dtpFecha = new System.Windows.Forms.DateTimePicker();
             this.SuspendLayout();
@@ -49,21 +48,6 @@
             this.btnLogin.Text = "EMPLEADO CON MAS VIAJES";
             this.btnLogin.UseVisualStyleBackColor = false;
             this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
-            // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(40)))), ((int)(((byte)(45)))));
-            this.button1.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(159)))), ((int)(((byte)(127)))));
-            this.button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
-            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(118)))), ((int)(((byte)(126)))));
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.ForeColor = System.Drawing.Color.LightGray;
-            this.button1.Location = new System.Drawing.Point(63, 393);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(180, 87);
-            this.button1.TabIndex = 15;
-            this.button1.Text = "EMPLEADO CON MAS VIAJES";
-            this.button1.UseVisualStyleBackColor = false;
             // 
             // btnReporte1
             // 
@@ -95,7 +79,6 @@
             this.ClientSize = new System.Drawing.Size(763, 681);
             this.Controls.Add(this.dtpFecha);
             this.Controls.Add(this.btnReporte1);
-            this.Controls.Add(this.button1);
             this.Controls.Add(this.btnLogin);
             this.Name = "frmReportes";
             this.Text = "frmReportes";
@@ -106,7 +89,6 @@
         #endregion
 
         private System.Windows.Forms.Button btnLogin;
-        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button btnReporte1;
         private System.Windows.Forms.DateTimePicker dtpFecha;
     }

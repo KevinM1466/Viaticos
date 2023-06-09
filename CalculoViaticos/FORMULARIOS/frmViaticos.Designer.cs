@@ -35,6 +35,9 @@
             // 
             // dgViaticos
             // 
+            this.dgViaticos.AllowUserToAddRows = false;
+            this.dgViaticos.AllowUserToDeleteRows = false;
+            this.dgViaticos.AllowUserToOrderColumns = true;
             this.dgViaticos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgViaticos.Location = new System.Drawing.Point(15, 41);
             this.dgViaticos.Name = "dgViaticos";

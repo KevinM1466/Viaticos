@@ -22,7 +22,13 @@ namespace CalculoViaticos.FORMULARIOS
         {
             var user = new InicioSesion();
             var rsultado = user.recoverPassword(tctCorreo.Text);
+            lblMessage.Visible = true;
             lblMessage.Text = rsultado.ToString();
+        }
+
+        private void btncerrar_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

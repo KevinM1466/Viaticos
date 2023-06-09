@@ -160,5 +160,10 @@ namespace CalculoViaticos
         {
             currentChildForm.Close();
         }
+
+        private void btnCerrarSesion_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

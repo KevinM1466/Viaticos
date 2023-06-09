@@ -16,11 +16,17 @@ namespace CalculoViaticos
         {
             Empleados empleados = new Empleados();
             dgEmpleados.DataSource = empleados.Mostrar();
+            dgEmpleados.Columns[0].Visible = false;
         }
         public void MostrarViaticos(DataGridView dgEmpleados)
         {
             Reporte reporte = new Reporte();
             dgEmpleados.DataSource = reporte.MostrarViaticos();
+            //dgEmpleados.Columns[0].Visible = false;
+            //dgEmpleados.Columns[3].Visible = false;
+            //dgEmpleados.Columns[6].Visible = false;
+            //dgEmpleados.Columns[7].Visible = false;
+            //dgEmpleados.Columns[8].Visible = false;
         }
 
         public void ListarPuestos(ComboBox cmbPuesto)

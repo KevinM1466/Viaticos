@@ -68,6 +68,8 @@ namespace CalculoViaticos.FORMULARIOS
         {
             this.Show();
             txtUsuario.Focus();
+            txtUsuario.Clear();
+            txtContrasenia.Clear();
         }
 
         private void linkpass_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)

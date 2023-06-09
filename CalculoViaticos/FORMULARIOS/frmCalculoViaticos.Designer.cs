@@ -28,18 +28,35 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
+            Microsoft.Reporting.WinForms.ReportDataSource reportDataSource1 = new Microsoft.Reporting.WinForms.ReportDataSource();
             this.reportViewer1 = new Microsoft.Reporting.WinForms.ReportViewer();
+            this.datosViaticosBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.datosViaticosBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            ((System.ComponentModel.ISupportInitialize)(this.datosViaticosBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.datosViaticosBindingSource1)).BeginInit();
             this.SuspendLayout();
             // 
             // reportViewer1
             // 
             this.reportViewer1.Dock = System.Windows.Forms.DockStyle.Fill;
+            reportDataSource1.Name = "DataSet1";
+            reportDataSource1.Value = this.datosViaticosBindingSource;
+            this.reportViewer1.LocalReport.DataSources.Add(reportDataSource1);
             this.reportViewer1.LocalReport.ReportEmbeddedResource = "CalculoViaticos.ReporteViaticos.rdlc";
             this.reportViewer1.Location = new System.Drawing.Point(0, 0);
             this.reportViewer1.Name = "reportViewer1";
             this.reportViewer1.ServerReport.BearerToken = null;
             this.reportViewer1.Size = new System.Drawing.Size(1234, 784);
             this.reportViewer1.TabIndex = 0;
+            // 
+            // datosViaticosBindingSource
+            // 
+            this.datosViaticosBindingSource.DataSource = typeof(CalculoViaticos.Clases.DatosViaticos);
+            // 
+            // datosViaticosBindingSource1
+            // 
+            this.datosViaticosBindingSource1.DataSource = typeof(CalculoViaticos.Clases.DatosViaticos);
             // 
             // frmCalculoViaticos
             // 
@@ -51,6 +68,8 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "frmCalculoViaticos";
             this.Load += new System.EventHandler(this.frmCalculoViaticos_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.datosViaticosBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.datosViaticosBindingSource1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -58,5 +77,7 @@
         #endregion
 
         private Microsoft.Reporting.WinForms.ReportViewer reportViewer1;
+        private System.Windows.Forms.BindingSource datosViaticosBindingSource;
+        private System.Windows.Forms.BindingSource datosViaticosBindingSource1;
     }
 }

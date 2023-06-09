@@ -42,6 +42,7 @@
             this.btnCerrar = new System.Windows.Forms.PictureBox();
             this.pnlDesktop = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.btnCerrarSesion = new System.Windows.Forms.Button();
             this.flowLayoutPanel1.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnInicio)).BeginInit();
@@ -169,6 +170,7 @@
             // 
             this.panelBarraTitulo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(40)))), ((int)(((byte)(60)))));
             this.panelBarraTitulo.Controls.Add(this.btnMinimize);
+            this.panelBarraTitulo.Controls.Add(this.btnCerrarSesion);
             this.panelBarraTitulo.Controls.Add(this.btnMaximizar);
             this.panelBarraTitulo.Controls.Add(this.btnCerrar);
             this.panelBarraTitulo.Dock = System.Windows.Forms.DockStyle.Top;
@@ -239,6 +241,24 @@
             this.pictureBox1.TabIndex = 2;
             this.pictureBox1.TabStop = false;
             // 
+            // btnCerrarSesion
+            // 
+            this.btnCerrarSesion.FlatAppearance.BorderSize = 0;
+            this.btnCerrarSesion.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCerrarSesion.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCerrarSesion.ForeColor = System.Drawing.Color.White;
+            this.btnCerrarSesion.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnCerrarSesion.Location = new System.Drawing.Point(1028, 5);
+            this.btnCerrarSesion.Margin = new System.Windows.Forms.Padding(2);
+            this.btnCerrarSesion.Name = "btnCerrarSesion";
+            this.btnCerrarSesion.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
+            this.btnCerrarSesion.Size = new System.Drawing.Size(143, 26);
+            this.btnCerrarSesion.TabIndex = 8;
+            this.btnCerrarSesion.Text = "Cerrar Sesion";
+            this.btnCerrarSesion.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnCerrarSesion.UseVisualStyleBackColor = true;
+            this.btnCerrarSesion.Click += new System.EventHandler(this.btnCerrarSesion_Click);
+            // 
             // FrmPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -280,5 +300,6 @@
         public System.Windows.Forms.Panel pnlDesktop;
         private System.Windows.Forms.Button btnReportes;
         public System.Windows.Forms.Button btnViaticos;
+        public System.Windows.Forms.Button btnCerrarSesion;
     }
 }

@@ -48,14 +48,18 @@
             this.txtCodigo = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.lblMensaje = new System.Windows.Forms.Label();
+            this.lblMsjDni = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgEmpleados)).BeginInit();
             this.SuspendLayout();
             // 
             // dgEmpleados
             // 
+            this.dgEmpleados.AllowUserToAddRows = false;
+            this.dgEmpleados.AllowUserToDeleteRows = false;
+            this.dgEmpleados.AllowUserToOrderColumns = true;
             this.dgEmpleados.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgEmpleados.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgEmpleados.Location = new System.Drawing.Point(9, 265);
+            this.dgEmpleados.Location = new System.Drawing.Point(7, 283);
             this.dgEmpleados.Margin = new System.Windows.Forms.Padding(2);
             this.dgEmpleados.Name = "dgEmpleados";
             this.dgEmpleados.ReadOnly = true;
@@ -85,7 +89,7 @@
             this.lblNombre.AutoSize = true;
             this.lblNombre.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblNombre.ForeColor = System.Drawing.Color.White;
-            this.lblNombre.Location = new System.Drawing.Point(17, 153);
+            this.lblNombre.Location = new System.Drawing.Point(37, 112);
             this.lblNombre.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblNombre.Name = "lblNombre";
             this.lblNombre.Size = new System.Drawing.Size(93, 25);
@@ -97,7 +101,7 @@
             this.lblApellido.AutoSize = true;
             this.lblApellido.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblApellido.ForeColor = System.Drawing.Color.White;
-            this.lblApellido.Location = new System.Drawing.Point(11, 195);
+            this.lblApellido.Location = new System.Drawing.Point(31, 154);
             this.lblApellido.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblApellido.Name = "lblApellido";
             this.lblApellido.Size = new System.Drawing.Size(101, 25);
@@ -121,7 +125,7 @@
             this.lblPuesto.AutoSize = true;
             this.lblPuesto.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblPuesto.ForeColor = System.Drawing.Color.White;
-            this.lblPuesto.Location = new System.Drawing.Point(393, 211);
+            this.lblPuesto.Location = new System.Drawing.Point(393, 198);
             this.lblPuesto.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblPuesto.Name = "lblPuesto";
             this.lblPuesto.Size = new System.Drawing.Size(83, 25);
@@ -133,7 +137,7 @@
             this.lblDni.AutoSize = true;
             this.lblDni.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblDni.ForeColor = System.Drawing.Color.White;
-            this.lblDni.Location = new System.Drawing.Point(60, 220);
+            this.lblDni.Location = new System.Drawing.Point(78, 184);
             this.lblDni.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblDni.Name = "lblDni";
             this.lblDni.Size = new System.Drawing.Size(47, 25);
@@ -145,7 +149,7 @@
             this.lblDireccion.AutoSize = true;
             this.lblDireccion.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblDireccion.ForeColor = System.Drawing.Color.White;
-            this.lblDireccion.Location = new System.Drawing.Point(367, 180);
+            this.lblDireccion.Location = new System.Drawing.Point(367, 167);
             this.lblDireccion.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblDireccion.Name = "lblDireccion";
             this.lblDireccion.Size = new System.Drawing.Size(112, 25);
@@ -154,7 +158,7 @@
             // 
             // txtNombre
             // 
-            this.txtNombre.Location = new System.Drawing.Point(108, 159);
+            this.txtNombre.Location = new System.Drawing.Point(128, 118);
             this.txtNombre.Margin = new System.Windows.Forms.Padding(2);
             this.txtNombre.Name = "txtNombre";
             this.txtNombre.ShortcutsEnabled = false;
@@ -164,7 +168,7 @@
             // 
             // txtApellido
             // 
-            this.txtApellido.Location = new System.Drawing.Point(108, 195);
+            this.txtApellido.Location = new System.Drawing.Point(128, 154);
             this.txtApellido.Margin = new System.Windows.Forms.Padding(2);
             this.txtApellido.Name = "txtApellido";
             this.txtApellido.ShortcutsEnabled = false;
@@ -174,7 +178,7 @@
             // 
             // txtDireccion
             // 
-            this.txtDireccion.Location = new System.Drawing.Point(482, 187);
+            this.txtDireccion.Location = new System.Drawing.Point(482, 174);
             this.txtDireccion.Margin = new System.Windows.Forms.Padding(2);
             this.txtDireccion.Name = "txtDireccion";
             this.txtDireccion.ShortcutsEnabled = false;
@@ -194,13 +198,14 @@
             // 
             // txtDni
             // 
-            this.txtDni.Location = new System.Drawing.Point(108, 228);
+            this.txtDni.Location = new System.Drawing.Point(128, 187);
             this.txtDni.Margin = new System.Windows.Forms.Padding(2);
             this.txtDni.MaxLength = 13;
             this.txtDni.Name = "txtDni";
             this.txtDni.ShortcutsEnabled = false;
             this.txtDni.Size = new System.Drawing.Size(228, 20);
             this.txtDni.TabIndex = 17;
+            this.txtDni.TextChanged += new System.EventHandler(this.txtDni_TextChanged);
             this.txtDni.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtDni_KeyPress);
             // 
             // btnGuardar
@@ -219,7 +224,7 @@
             // 
             this.cmbPuesto.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbPuesto.FormattingEnabled = true;
-            this.cmbPuesto.Location = new System.Drawing.Point(482, 215);
+            this.cmbPuesto.Location = new System.Drawing.Point(482, 202);
             this.cmbPuesto.Margin = new System.Windows.Forms.Padding(2);
             this.cmbPuesto.Name = "cmbPuesto";
             this.cmbPuesto.Size = new System.Drawing.Size(228, 21);
@@ -252,13 +257,14 @@
             // 
             // txtCodigo
             // 
-            this.txtCodigo.Location = new System.Drawing.Point(108, 123);
+            this.txtCodigo.Location = new System.Drawing.Point(482, 33);
             this.txtCodigo.Margin = new System.Windows.Forms.Padding(2);
             this.txtCodigo.Name = "txtCodigo";
             this.txtCodigo.ReadOnly = true;
             this.txtCodigo.ShortcutsEnabled = false;
             this.txtCodigo.Size = new System.Drawing.Size(228, 20);
             this.txtCodigo.TabIndex = 26;
+            this.txtCodigo.Visible = false;
             this.txtCodigo.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtCodigo_KeyPress);
             // 
             // label3
@@ -266,12 +272,13 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(20, 115);
+            this.label3.Location = new System.Drawing.Point(394, 28);
             this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(86, 25);
             this.label3.TabIndex = 25;
             this.label3.Text = "CODIGO";
+            this.label3.Visible = false;
             // 
             // lblMensaje
             // 
@@ -286,12 +293,26 @@
             this.lblMensaje.Text = "Message";
             this.lblMensaje.Visible = false;
             // 
+            // lblMsjDni
+            // 
+            this.lblMsjDni.AutoSize = true;
+            this.lblMsjDni.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblMsjDni.ForeColor = System.Drawing.Color.Red;
+            this.lblMsjDni.Location = new System.Drawing.Point(125, 209);
+            this.lblMsjDni.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblMsjDni.Name = "lblMsjDni";
+            this.lblMsjDni.Size = new System.Drawing.Size(61, 17);
+            this.lblMsjDni.TabIndex = 28;
+            this.lblMsjDni.Text = "Message";
+            this.lblMsjDni.Visible = false;
+            // 
             // FrmEmpleados
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(40)))), ((int)(((byte)(70)))));
-            this.ClientSize = new System.Drawing.Size(1005, 611);
+            this.ClientSize = new System.Drawing.Size(1005, 647);
+            this.Controls.Add(this.lblMsjDni);
             this.Controls.Add(this.lblMensaje);
             this.Controls.Add(this.txtCodigo);
             this.Controls.Add(this.label3);
@@ -344,5 +365,6 @@
         private System.Windows.Forms.TextBox txtCodigo;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label lblMensaje;
+        private System.Windows.Forms.Label lblMsjDni;
     }
 }

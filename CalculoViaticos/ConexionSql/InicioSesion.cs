@@ -87,14 +87,14 @@ namespace CalculoViaticos.ConexionSql
                 using (var command = new SqlCommand())
                 {
                     command.Connection = connection;
-                    command.CommandText = "SELECT a.IdUsuario, b.correo, [dbo].[Desencriptar](A.Contrasenia) AS Contraseña, B.nombre, B.apellido FROM Usuarios A INNER JOIN empleados B ON a.IdEmpleado = b.IdEmpleado WHERE b.correo = @correo";
+                    command.CommandText = "SELECT IdEmpleado, nombre, apellido, correo FROM [dbo].[Empleados] WHERE correo = @correo";
                     command.Parameters.AddWithValue("@correo", userRequesting);
                     command.CommandType = CommandType.Text;
                     SqlDataReader reader = command.ExecuteReader();
                     if (reader.Read() == true)
                     {
-                        string userName = reader.GetString(3) + " " + reader.GetString(4);
-                        string userMail = reader.GetString(1);
+                        string userName = reader.GetString(1) + " " + reader.GetString(2);
+                        string userMail = reader.GetString(3);
                         var mailService = new ServidorCorreo.SistemaSoporteCorreo();
                         mailService.sendMail(
                           subject: "SISTEMA: Mensaje de Asignacion de viaticos",

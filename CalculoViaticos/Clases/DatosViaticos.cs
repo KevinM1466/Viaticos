@@ -29,5 +29,7 @@ namespace CalculoViaticos.Clases
         public float ida { get; set; }
         public float regreso { get; set; }
         public int nodiasotros { get; set; }
+        public float asignacionxdia { get; set; }
+        public string descripcionotros { get; set; }
     }
 }

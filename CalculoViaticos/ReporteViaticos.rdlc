@@ -434,11 +434,17 @@
           <Paragraph>
             <TextRuns>
               <TextRun>
+                <Value>Lps.                 </Value>
+                <Style />
+              </TextRun>
+              <TextRun>
                 <Value>=Sum(Fields!asignaciondesayuno.Value, "DataSet1")</Value>
                 <Style />
               </TextRun>
             </TextRuns>
-            <Style />
+            <Style>
+              <TextAlign>Right</TextAlign>
+            </Style>
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>asignaciondesayuno</rd:DefaultName>
@@ -464,11 +470,17 @@
           <Paragraph>
             <TextRuns>
               <TextRun>
+                <Value>Lps.                 </Value>
+                <Style />
+              </TextRun>
+              <TextRun>
                 <Value>=Sum(Fields!asignacionalmuerzo.Value, "DataSet1")</Value>
                 <Style />
               </TextRun>
             </TextRuns>
-            <Style />
+            <Style>
+              <TextAlign>Right</TextAlign>
+            </Style>
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>asignacionalmuerzo</rd:DefaultName>
@@ -494,11 +506,17 @@
           <Paragraph>
             <TextRuns>
               <TextRun>
+                <Value>Lps.                 </Value>
+                <Style />
+              </TextRun>
+              <TextRun>
                 <Value>=Sum(Fields!asignacioncena.Value, "DataSet1")</Value>
                 <Style />
               </TextRun>
             </TextRuns>
-            <Style />
+            <Style>
+              <TextAlign>Right</TextAlign>
+            </Style>
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>asignacioncena</rd:DefaultName>
@@ -524,11 +542,17 @@
           <Paragraph>
             <TextRuns>
               <TextRun>
+                <Value>Lps.                 </Value>
+                <Style />
+              </TextRun>
+              <TextRun>
                 <Value>=Sum(Fields!subTotalAlmuerzo.Value, "DataSet1")</Value>
                 <Style />
               </TextRun>
             </TextRuns>
-            <Style />
+            <Style>
+              <TextAlign>Right</TextAlign>
+            </Style>
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>subTotalAlmuerzo1</rd:DefaultName>
@@ -554,11 +578,17 @@
           <Paragraph>
             <TextRuns>
               <TextRun>
+                <Value>Lps.                 </Value>
+                <Style />
+              </TextRun>
+              <TextRun>
                 <Value>=Sum(Fields!subTotalCena.Value, "DataSet1")</Value>
                 <Style />
               </TextRun>
             </TextRuns>
-            <Style />
+            <Style>
+              <TextAlign>Right</TextAlign>
+            </Style>
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>subTotalCena1</rd:DefaultName>
@@ -584,11 +614,17 @@
           <Paragraph>
             <TextRuns>
               <TextRun>
+                <Value>Lps.                 </Value>
+                <Style />
+              </TextRun>
+              <TextRun>
                 <Value>=Sum(Fields!subTotalDesayuno.Value, "DataSet1")</Value>
                 <Style />
               </TextRun>
             </TextRuns>
-            <Style />
+            <Style>
+              <TextAlign>Right</TextAlign>
+            </Style>
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>subTotalDesayuno1</rd:DefaultName>
@@ -644,11 +680,17 @@
           <Paragraph>
             <TextRuns>
               <TextRun>
+                <Value>Lps.                 </Value>
+                <Style />
+              </TextRun>
+              <TextRun>
                 <Value>=Sum(Fields!subTotalDesayuno.Value, "DataSet1")+Sum(Fields!subTotalAlmuerzo.Value, "DataSet1")+Sum(Fields!subTotalCena.Value, "DataSet1")</Value>
                 <Style />
               </TextRun>
             </TextRuns>
-            <Style />
+            <Style>
+              <TextAlign>Right</TextAlign>
+            </Style>
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>Textbox51</rd:DefaultName>
@@ -783,7 +825,7 @@
               </TextRun>
             </TextRuns>
             <Style>
-              <TextAlign>Center</TextAlign>
+              <TextAlign>Right</TextAlign>
             </Style>
           </Paragraph>
         </Paragraphs>
@@ -970,11 +1012,17 @@
           <Paragraph>
             <TextRuns>
               <TextRun>
+                <Value>Lps.                 </Value>
+                <Style />
+              </TextRun>
+              <TextRun>
                 <Value>=Sum(Fields!asignacionxdiahosp.Value, "DataSet1")</Value>
                 <Style />
               </TextRun>
             </TextRuns>
-            <Style />
+            <Style>
+              <TextAlign>Right</TextAlign>
+            </Style>
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>asignaciondesayuno</rd:DefaultName>
@@ -1064,7 +1112,9 @@
                 <Style />
               </TextRun>
             </TextRuns>
-            <Style />
+            <Style>
+              <TextAlign>Right</TextAlign>
+            </Style>
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>subTotalAlmuerzo1</rd:DefaultName>
@@ -1094,7 +1144,9 @@
                 <Style />
               </TextRun>
             </TextRuns>
-            <Style />
+            <Style>
+              <TextAlign>Right</TextAlign>
+            </Style>
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>subTotalCena1</rd:DefaultName>
@@ -1120,11 +1172,17 @@
           <Paragraph>
             <TextRuns>
               <TextRun>
+                <Value>Lps.                 </Value>
+                <Style />
+              </TextRun>
+              <TextRun>
                 <Value>=Sum(Fields!asignacionxdiahosp.Value, "DataSet1")*Sum(Fields!nodiashosp.Value, "DataSet1")</Value>
                 <Style />
               </TextRun>
             </TextRuns>
-            <Style />
+            <Style>
+              <TextAlign>Right</TextAlign>
+            </Style>
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>subTotalDesayuno1</rd:DefaultName>
@@ -1182,11 +1240,17 @@
           <Paragraph>
             <TextRuns>
               <TextRun>
+                <Value>Lps.                 </Value>
+                <Style />
+              </TextRun>
+              <TextRun>
                 <Value>=Sum(Fields!asignacionxdiahosp.Value, "DataSet1")*Sum(Fields!nodiashosp.Value, "DataSet1")</Value>
                 <Style />
               </TextRun>
             </TextRuns>
-            <Style />
+            <Style>
+              <TextAlign>Right</TextAlign>
+            </Style>
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>subTotalDesayuno1</rd:DefaultName>
@@ -1321,7 +1385,7 @@
               </TextRun>
             </TextRuns>
             <Style>
-              <TextAlign>Center</TextAlign>
+              <TextAlign>Right</TextAlign>
             </Style>
           </Paragraph>
         </Paragraphs>
@@ -1508,11 +1572,17 @@
           <Paragraph>
             <TextRuns>
               <TextRun>
+                <Value>Lps.                 </Value>
+                <Style />
+              </TextRun>
+              <TextRun>
                 <Value>=Sum(Fields!regreso.Value, "DataSet1")</Value>
                 <Style />
               </TextRun>
             </TextRuns>
-            <Style />
+            <Style>
+              <TextAlign>Right</TextAlign>
+            </Style>
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>asignaciondesayuno</rd:DefaultName>
@@ -1602,7 +1672,9 @@
                 <Style />
               </TextRun>
             </TextRuns>
-            <Style />
+            <Style>
+              <TextAlign>Right</TextAlign>
+            </Style>
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>subTotalAlmuerzo1</rd:DefaultName>
@@ -1632,7 +1704,9 @@
                 <Style />
               </TextRun>
             </TextRuns>
-            <Style />
+            <Style>
+              <TextAlign>Right</TextAlign>
+            </Style>
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>subTotalCena1</rd:DefaultName>
@@ -1658,11 +1732,17 @@
           <Paragraph>
             <TextRuns>
               <TextRun>
+                <Value>Lps.                 </Value>
+                <Style />
+              </TextRun>
+              <TextRun>
                 <Value>=Sum(Fields!ida.Value, "DataSet1")+Sum(Fields!regreso.Value, "DataSet1")</Value>
                 <Style />
               </TextRun>
             </TextRuns>
-            <Style />
+            <Style>
+              <TextAlign>Right</TextAlign>
+            </Style>
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>subTotalDesayuno1</rd:DefaultName>
@@ -1720,11 +1800,17 @@
           <Paragraph>
             <TextRuns>
               <TextRun>
+                <Value>Lps.                 </Value>
+                <Style />
+              </TextRun>
+              <TextRun>
                 <Value>=Sum(Fields!ida.Value, "DataSet1")+Sum(Fields!regreso.Value, "DataSet1")</Value>
                 <Style />
               </TextRun>
             </TextRuns>
-            <Style />
+            <Style>
+              <TextAlign>Right</TextAlign>
+            </Style>
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>subTotalDesayuno1</rd:DefaultName>
@@ -1818,7 +1904,7 @@
           <Paragraph>
             <TextRuns>
               <TextRun>
-                <Value>Regreso</Value>
+                <Value>Asignacion por dia</Value>
                 <Style>
                   <FontWeight>Bold</FontWeight>
                 </Style>
@@ -1859,7 +1945,7 @@
               </TextRun>
             </TextRuns>
             <Style>
-              <TextAlign>Center</TextAlign>
+              <TextAlign>Right</TextAlign>
             </Style>
           </Paragraph>
         </Paragraphs>
@@ -1886,12 +1972,12 @@
           <Paragraph>
             <TextRuns>
               <TextRun>
-                <Value />
+                <Value>=First(Fields!descripcionotros.Value, "DataSet1")</Value>
                 <Style />
               </TextRun>
             </TextRuns>
             <Style>
-              <TextAlign>Center</TextAlign>
+              <TextAlign>Left</TextAlign>
             </Style>
           </Paragraph>
         </Paragraphs>
@@ -2046,11 +2132,17 @@
           <Paragraph>
             <TextRuns>
               <TextRun>
-                <Value />
+                <Value>Lps.                 </Value>
+                <Style />
+              </TextRun>
+              <TextRun>
+                <Value>=Sum(Fields!asignacionxdia.Value, "DataSet1")</Value>
                 <Style />
               </TextRun>
             </TextRuns>
-            <Style />
+            <Style>
+              <TextAlign>Right</TextAlign>
+            </Style>
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>asignaciondesayuno</rd:DefaultName>
@@ -2140,7 +2232,9 @@
                 <Style />
               </TextRun>
             </TextRuns>
-            <Style />
+            <Style>
+              <TextAlign>Right</TextAlign>
+            </Style>
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>subTotalAlmuerzo1</rd:DefaultName>
@@ -2170,7 +2264,9 @@
                 <Style />
               </TextRun>
             </TextRuns>
-            <Style />
+            <Style>
+              <TextAlign>Right</TextAlign>
+            </Style>
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>subTotalCena1</rd:DefaultName>
@@ -2196,11 +2292,17 @@
           <Paragraph>
             <TextRuns>
               <TextRun>
-                <Value />
+                <Value>Lps.                 </Value>
+                <Style />
+              </TextRun>
+              <TextRun>
+                <Value>=Sum(Fields!nodiasotros.Value, "DataSet1")*Sum(Fields!asignacionxdia.Value, "DataSet1")</Value>
                 <Style />
               </TextRun>
             </TextRuns>
-            <Style />
+            <Style>
+              <TextAlign>Right</TextAlign>
+            </Style>
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>subTotalDesayuno1</rd:DefaultName>
@@ -2258,11 +2360,17 @@
           <Paragraph>
             <TextRuns>
               <TextRun>
-                <Value>=Sum(Fields!nodiasotros.Value, "DataSet1")</Value>
+                <Value>Lps.                 </Value>
+                <Style />
+              </TextRun>
+              <TextRun>
+                <Value>=Sum(Fields!nodiasotros.Value, "DataSet1")*Sum(Fields!asignacionxdia.Value, "DataSet1")</Value>
                 <Style />
               </TextRun>
             </TextRuns>
-            <Style />
+            <Style>
+              <TextAlign>Right</TextAlign>
+            </Style>
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>subTotalDesayuno1</rd:DefaultName>
@@ -2322,11 +2430,17 @@
           <Paragraph>
             <TextRuns>
               <TextRun>
-                <Value>=Sum(Fields!subTotalDesayuno.Value, "DataSet1")+Sum(Fields!subTotalAlmuerzo.Value, "DataSet1")+Sum(Fields!subTotalCena.Value, "DataSet1")+(Sum(Fields!asignacionxdiahosp.Value, "DataSet1")*Sum(Fields!nodiashosp.Value, "DataSet1"))+Sum(Fields!ida.Value, "DataSet1")+Sum(Fields!regreso.Value, "DataSet1")</Value>
+                <Value>Lps.                 </Value>
+                <Style />
+              </TextRun>
+              <TextRun>
+                <Value>=Sum(Fields!subTotalDesayuno.Value, "DataSet1")+Sum(Fields!subTotalAlmuerzo.Value, "DataSet1")+Sum(Fields!subTotalCena.Value, "DataSet1")+(Sum(Fields!asignacionxdiahosp.Value, "DataSet1")*Sum(Fields!nodiashosp.Value, "DataSet1"))+Sum(Fields!ida.Value, "DataSet1")+Sum(Fields!regreso.Value, "DataSet1")+(Sum(Fields!nodiasotros.Value, "DataSet1")*Sum(Fields!asignacionxdia.Value, "DataSet1"))</Value>
                 <Style />
               </TextRun>
             </TextRuns>
-            <Style />
+            <Style>
+              <TextAlign>Right</TextAlign>
+            </Style>
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>Total</rd:DefaultName>
@@ -2505,7 +2619,7 @@
         <DataProvider>System.Data.DataSet</DataProvider>
         <ConnectString>/* Local Connection */</ConnectString>
       </ConnectionProperties>
-      <rd:DataSourceID>6b77ef50-080e-4c5e-be8c-0d4aff2728a5</rd:DataSourceID>
+      <rd:DataSourceID>dbd42404-9c5c-438e-b663-d155272b5874</rd:DataSourceID>
     </DataSource>
   </DataSources>
   <DataSets>
@@ -2527,6 +2641,10 @@
           <DataField>asignaciondesayuno</DataField>
           <rd:TypeName>System.Single</rd:TypeName>
         </Field>
+        <Field Name="asignacionxdia">
+          <DataField>asignacionxdia</DataField>
+          <rd:TypeName>System.Single</rd:TypeName>
+        </Field>
         <Field Name="asignacionxdiahosp">
           <DataField>asignacionxdiahosp</DataField>
           <rd:TypeName>System.Single</rd:TypeName>
@@ -2537,6 +2655,10 @@
         </Field>
         <Field Name="correo">
           <DataField>correo</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="descripcionotros">
+          <DataField>descripcionotros</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
         <Field Name="fechaRegreso">

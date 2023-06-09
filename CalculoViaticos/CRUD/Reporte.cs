@@ -29,7 +29,7 @@ namespace CalculoViaticos.CRUD
                     command.Parameters.Clear();
                     command.Parameters.AddWithValue("@ndiasDesayuno", ndiasDesayuno);
                     command.Parameters.AddWithValue("@asignacionDesayuno",asignacionDesayuno);
-                    command.Parameters.AddWithValue("@ndiasAlmuerzo", asignacionAlmuerzo);
+                    command.Parameters.AddWithValue("@ndiasAlmuerzo", ndiasAlmuerzo);
                     command.Parameters.AddWithValue("@asignacionAlmuerzo", asignacionAlmuerzo);
                     command.Parameters.AddWithValue("@ndiasCena", ndiasCena);
                     command.Parameters.AddWithValue("@asignacionCena", asignacionCena);

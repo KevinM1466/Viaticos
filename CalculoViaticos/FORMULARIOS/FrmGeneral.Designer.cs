@@ -176,57 +176,58 @@
             // 
             this.cmbOtros.FormattingEnabled = true;
             this.cmbOtros.Items.AddRange(new object[] {
-            "TRANSPORTE LOCAL",
             "TRANSPORTE AEREO",
+            "TRANSPORTE LOCAL",
             "TRANSPORTE TERRESTRE"});
-            this.cmbOtros.Location = new System.Drawing.Point(1076, 103);
+            this.cmbOtros.Location = new System.Drawing.Point(1090, 120);
             this.cmbOtros.Margin = new System.Windows.Forms.Padding(2);
             this.cmbOtros.Name = "cmbOtros";
             this.cmbOtros.Size = new System.Drawing.Size(56, 21);
+            this.cmbOtros.Sorted = true;
             this.cmbOtros.TabIndex = 68;
-            this.cmbOtros.Visible = false;
             // 
             // cmbTransporte
             // 
             this.cmbTransporte.FormattingEnabled = true;
             this.cmbTransporte.Items.AddRange(new object[] {
-            "TRANSPORTE LOCAL",
             "TRANSPORTE AEREO",
+            "TRANSPORTE LOCAL",
             "TRANSPORTE TERRESTRE"});
-            this.cmbTransporte.Location = new System.Drawing.Point(1076, 78);
+            this.cmbTransporte.Location = new System.Drawing.Point(1090, 95);
             this.cmbTransporte.Margin = new System.Windows.Forms.Padding(2);
             this.cmbTransporte.Name = "cmbTransporte";
             this.cmbTransporte.Size = new System.Drawing.Size(56, 21);
+            this.cmbTransporte.Sorted = true;
             this.cmbTransporte.TabIndex = 67;
-            this.cmbTransporte.Visible = false;
             // 
             // cmbHospedaje
             // 
             this.cmbHospedaje.FormattingEnabled = true;
             this.cmbHospedaje.Items.AddRange(new object[] {
-            "TRANSPORTE LOCAL",
             "TRANSPORTE AEREO",
+            "TRANSPORTE LOCAL",
             "TRANSPORTE TERRESTRE"});
-            this.cmbHospedaje.Location = new System.Drawing.Point(1076, 53);
+            this.cmbHospedaje.Location = new System.Drawing.Point(1090, 70);
             this.cmbHospedaje.Margin = new System.Windows.Forms.Padding(2);
             this.cmbHospedaje.Name = "cmbHospedaje";
             this.cmbHospedaje.Size = new System.Drawing.Size(56, 21);
+            this.cmbHospedaje.Sorted = true;
             this.cmbHospedaje.TabIndex = 66;
-            this.cmbHospedaje.Visible = false;
             // 
             // cmbAlimentacion
             // 
             this.cmbAlimentacion.FormattingEnabled = true;
             this.cmbAlimentacion.Items.AddRange(new object[] {
-            "TRANSPORTE LOCAL",
             "TRANSPORTE AEREO",
+            "TRANSPORTE LOCAL",
             "TRANSPORTE TERRESTRE"});
-            this.cmbAlimentacion.Location = new System.Drawing.Point(1076, 28);
+            this.cmbAlimentacion.Location = new System.Drawing.Point(1090, 45);
             this.cmbAlimentacion.Margin = new System.Windows.Forms.Padding(2);
+            this.cmbAlimentacion.MaxDropDownItems = 100;
             this.cmbAlimentacion.Name = "cmbAlimentacion";
             this.cmbAlimentacion.Size = new System.Drawing.Size(56, 21);
+            this.cmbAlimentacion.Sorted = true;
             this.cmbAlimentacion.TabIndex = 65;
-            this.cmbAlimentacion.Visible = false;
             // 
             // rtbDescripcionOtros
             // 

@@ -4,6 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -14,10 +15,12 @@ namespace CalculoViaticos.FORMULARIOS
 {
     public partial class FrmEmpleados : Form
     {
-        
+
         Metodos metodos = new Metodos();
         Empleados empleados = new Empleados();
         Validaciones validaciones = new Validaciones();
+
+        string correo;
 
         public FrmEmpleados()
         {
@@ -28,7 +31,7 @@ namespace CalculoViaticos.FORMULARIOS
         {
             metodos.MostrarEmpleados(dgEmpleados);
             metodos.ListarPuestos(cmbPuesto);
-            
+
         }
 
         private void btnGuardar_Click(object sender, EventArgs e)
@@ -38,18 +41,40 @@ namespace CalculoViaticos.FORMULARIOS
                 if (txtNombre.Text == "" || txtApellido.Text == "" || txtDni.Text == "" || txtCorreo.Text == "" || txtDireccion.Text == "")
                 {
                     MessageBox.Show("No puede dejar los campos vacios");
-                } else
-                {
-                    empleados.guardar(txtNombre.Text, txtApellido.Text, int.Parse(cmbPuesto.SelectedValue.ToString()), txtDni.Text, txtCorreo.Text, txtDireccion.Text);
-                    MessageBox.Show("Empleado guardado exitosamente");
-                    limpiar();
-                    metodos.MostrarEmpleados(dgEmpleados);
                 }
-                
+                else
+                {
+                    if (validaciones.ValidarEmail(txtCorreo.Text))
+                    {
+
+                        if (txtDni.TextLength < 13)
+                        {
+                            MessageBox.Show("El DNI debe tener 13 numeros");
+                        }
+                        else
+                        {
+                            correo = txtCorreo.Text;
+
+                            empleados.guardar(txtNombre.Text, txtApellido.Text, int.Parse(cmbPuesto.SelectedValue.ToString()), txtDni.Text, correo, txtDireccion.Text);
+                            MessageBox.Show("Empleado guardado exitosamente");
+                            limpiar();
+                            metodos.MostrarEmpleados(dgEmpleados);
+                        }
+
+                    }
+                    else
+                    {
+                        MessageBox.Show("Debe ingresar un correo electronico valido");
+                    }
+
+                }
+
             }
-            catch (Exception ex)
+            catch (SqlException ex)
             {
-                MessageBox.Show("Error al guardar los datos");
+
+                MessageBox.Show(ex.ToString().Replace(ex.ToString(), "Este empleado o correo ya estan registrados"));
+                //MessageBox.Show(ex.Class.ToString());
             }
         }
 
@@ -58,14 +83,28 @@ namespace CalculoViaticos.FORMULARIOS
             if (txtNombre.Text == "" || txtApellido.Text == "" || txtDni.Text == "" || txtCorreo.Text == "" || txtDireccion.Text == "")
             {
                 MessageBox.Show("No puede dejar los campos vacios");
-            } else
-            {
-                empleados.actualizar(int.Parse(txtCodigo.Text), txtNombre.Text, txtApellido.Text, int.Parse(cmbPuesto.SelectedValue.ToString()), txtDni.Text, txtCorreo.Text, txtDireccion.Text);
-                MessageBox.Show("Empleado actualizado correctamente");
-                limpiar();
-                metodos.MostrarEmpleados(dgEmpleados);
             }
-            
+            else
+            {
+                if (validaciones.ValidarEmail(txtCorreo.Text))
+                {
+                    if (txtDni.TextLength < 13)
+                    {
+                        MessageBox.Show("El DNI debe tener 13 numeros");
+                    }
+                    else
+                    {
+                        correo = txtCorreo.Text;
+
+                        empleados.actualizar(int.Parse(txtCodigo.Text), txtNombre.Text, txtApellido.Text, int.Parse(cmbPuesto.SelectedValue.ToString()), txtDni.Text, correo, txtDireccion.Text);
+                        MessageBox.Show("Empleado actualizado correctamente");
+                        limpiar();
+                        metodos.MostrarEmpleados(dgEmpleados);
+                    }
+
+                }
+            }
+
         }
 
         private void dgEmpleados_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
@@ -88,6 +127,8 @@ namespace CalculoViaticos.FORMULARIOS
             txtCorreo.Clear();
             txtDni.Clear();
             cmbPuesto.Text = dgEmpleados.CurrentRow.Cells[6].Value.ToString();
+            lblMensaje.Visible = false;
+            lblMsjDni.Visible = false;
         }
 
         private void btnEliminar_Click(object sender, EventArgs e)
@@ -133,7 +174,7 @@ namespace CalculoViaticos.FORMULARIOS
 
         private void txtCorreo_KeyPress(object sender, KeyPressEventArgs e)
         {
-            
+
         }
 
         private void txtCorreo_TextChanged(object sender, EventArgs e)
@@ -143,10 +184,26 @@ namespace CalculoViaticos.FORMULARIOS
                 lblMensaje.Visible = true;
                 lblMensaje.Text = "Correo Electrónico invalido";
                 lblMensaje.ForeColor = Color.Red;
-            } else
+            }
+            else
             {
                 lblMensaje.Text = "Correo Electrónico válido";
                 lblMensaje.ForeColor = Color.Green;
+            }
+        }
+
+        private void txtDni_TextChanged(object sender, EventArgs e)
+        {
+            if (txtDni.TextLength < 13)
+            {
+                lblMsjDni.Visible = true;
+                lblMsjDni.Text = "El DNI debe tener 13 numeros";
+                lblMsjDni.ForeColor = Color.Red;
+            }
+            else
+            {
+                lblMsjDni.Text = "DNI Válido";
+                lblMsjDni.ForeColor = Color.Green;
             }
         }
     }

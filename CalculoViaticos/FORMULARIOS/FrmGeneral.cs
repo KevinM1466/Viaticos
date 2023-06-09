@@ -382,7 +382,7 @@ namespace CalculoViaticos
             {
                 if (int.Parse(txtnodiashosp.Text) > diasViaticos)
                 {
-                    MessageBox.Show("Lo siento no puede asignar mas tiempos de alimento\n porque exeden el tiempo de viaje", "Soporte Tecnico", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    MessageBox.Show("Lo siento no puede asignar mas tiempos de hospedaje\n porque exeden el tiempo de viaje", "Soporte Tecnico", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     txtnodiashosp.Text = "0";
                     txtnodiashosp.SelectAll();
                 }
@@ -443,6 +443,20 @@ namespace CalculoViaticos
 
         private void txtNodiasotro_TextChanged(object sender, EventArgs e)
         {
+            fechaSalida = dtpFechaSalida.Value.Date;
+            fechaRegreso = dtpFechaRegreso.Value.Date;
+
+            TimeSpan dias = fechaRegreso - fechaSalida;
+
+            if (dias.Days == 0)
+            {
+                diasViaticos = 1;
+            }
+            else
+            {
+                diasViaticos = dias.Days + 1;
+            }
+
             if (txtNodiasotro.Text == "")
             {
                 txtNodiasotro.Text = "0";
@@ -450,9 +464,19 @@ namespace CalculoViaticos
             }
             else
             {
-                diasOtro = int.Parse(txtNodiasotro.Text);
-                float subTotal = diasOtro * asignacionOtro;
-                txtTotalOtros.Text = subTotal.ToString();
+                if (int.Parse(txtnodiashosp.Text) > diasViaticos)
+                {
+                    MessageBox.Show("Lo siento no puede asignar mas tiempos de otros\n porque exeden el tiempo de viaje", "Soporte Tecnico", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    txtnodiashosp.Text = "0";
+                    txtnodiashosp.SelectAll();
+                }
+                else
+                {
+                    diasOtro = int.Parse(txtNodiasotro.Text);
+                    float subTotal = diasOtro * asignacionOtro;
+                    txtTotalOtros.Text = subTotal.ToString();
+                }
+                
             }
         }
 
